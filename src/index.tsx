@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import History1 from './History1';
+import History from './History';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -22,7 +22,7 @@ root.render(
     <BrowserRouter basename="/">
       <Routes>
         <Route path='/' element={<App />} />
-        <Route path='/historia1' element={<History1 />} />
+        <Route path='/historia' element={<History />} />
       </Routes>
     </BrowserRouter>
 );

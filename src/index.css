@@ -132,3 +132,64 @@ nav {
 .link:hover {
   color: #fff;
 }
+
+.video {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.video {
+  --video--width: 1920;
+  --video--height: 1080;
+  /* width: 100%;
+  height: 100vh; */
+  padding-bottom: calc(var(--video--height) / var(--video--width) * 100%); /* 41.66666667% */
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.inner_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background: none;
+}
+
+.inner_header .logo {
+  display: inline;
+  padding: 20px;
+  border-radius: 15px;
+  background: #001b29b3;
+}
+
+.preview {
+  position: absolute;
+  z-index: 2;
+}
+
+.quiz {
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+  background: #fff;
+  height: calc(100vh - 40px);
+  width: 100%;
+  padding: 40px;
+  padding-top: 100px;
+  border-radius: 40px;
+}

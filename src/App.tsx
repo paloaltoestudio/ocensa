@@ -1,4 +1,3 @@
-import React from 'react';
 import ocensa_logo from './assets/ocensa-logo.svg'
 import title from './assets/el-asedio-logo.png'
 import parlanchin from './assets/parlanchin.png'
@@ -39,7 +38,7 @@ function App() {
                 </p>
                 <h3>Rasgos específicos:</h3>
                 <p>Con su voz segura y convincente logra atraer a sus víctimas a través de llamadas telefónicas.</p>
-                <Link to="/historia1" relative="path" className="link">
+                <Link to="/historia" relative="path" className="link">
                   Empecemos
                 </Link> 
               </Carousel.Caption>
