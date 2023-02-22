@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HistoryProvider } from './HistoryProvider';
 import './index.css';
 import App from './App';
 import History from './History';
@@ -19,12 +20,14 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
+    <HistoryProvider>
     <BrowserRouter basename="/">
       <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/historia' element={<History />} />
+          <Route path='/' element={<App />} />
+          <Route path='/historia' element={<History />} />
       </Routes>
     </BrowserRouter>
+    </HistoryProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -5,8 +5,6 @@ import top_frame from './assets/top_frame.png'
 import {Carousel} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
-
 function App() {
   
   return (
