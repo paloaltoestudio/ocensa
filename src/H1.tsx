@@ -21,9 +21,9 @@ function H1() {
         let player = new Player(playerRef.current, options);
   
         player.on("ended", () => {
-          setHistory('h2')
-          setPreview(true)
-          //setQuiz('q1')
+          // setHistory('h2')
+          // setPreview(true)
+          setQuiz('q1')
         });
       }
     }, [id, play, video]);
@@ -46,7 +46,7 @@ function H1() {
           {preview && (
             <img className="preview" src={pesca} onClick={() => handlePreview() } width="100%" alt="" />
           )}
-
+          
           {renderVideo()}
 
           {quiz && ( <Quiz1 />)}

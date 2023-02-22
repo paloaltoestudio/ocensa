@@ -26,7 +26,7 @@ export function HistoryProvider({children}){
                                          setQuiz,
                                          video, 
                                          setVideo,]}>
-                {children}
+            {children}
         </HistoryContext.Provider>
     )
 }

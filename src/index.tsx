@@ -13,6 +13,8 @@ import {
   Routes,
   Route 
 } from 'react-router-dom';
+import Correct from './correct';
+import Incorrect from './incorrect';
 
 
 
@@ -25,6 +27,8 @@ root.render(
       <Routes>
           <Route path='/' element={<App />} />
           <Route path='/historia' element={<History />} />
+          <Route path='/correcto' element={<Correct />} />
+          <Route path='/incorrecto' element={<Incorrect />} />
       </Routes>
     </BrowserRouter>
     </HistoryProvider>
