@@ -142,7 +142,7 @@ nav {
 
 .video {
   --video--width: 1920;
-  --video--height: 1080;
+  --video--height: 1070;
   /* width: 100%;
   height: 100vh; */
   padding-bottom: calc(var(--video--height) / var(--video--width) * 100%); /* 41.66666667% */
@@ -151,6 +151,7 @@ nav {
   max-width: 100%;
   background: #000;
   z-index: 1;
+  margin: 10px;
 }
 
 .video iframe,
@@ -181,7 +182,26 @@ nav {
 
 .preview {
   position: absolute;
+  height: 100%;
+  object-fit: fill;
   z-index: 2;
+  cursor: pointer;
+}
+
+.preview_icon {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 3;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.preview_icon:hover {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .quiz {
@@ -191,7 +211,7 @@ nav {
   align-items: center;
   flex-direction: column;
   z-index: 2;
-  top: 40px;
+  top: 30px;
   background: #E9E9E9;
   height: calc(100vh - 40px);
   width: 100%;
@@ -245,4 +265,29 @@ nav {
 .quiz .link {
   border: none;
   margin: auto;
+}
+
+.correct {
+  background: rgb(39,79,91);
+  background: linear-gradient(180deg, rgba(39,79,91,1) 0%, rgba(204,224,244,1) 100%);
+  border-radius: 40px;
+  height: calc(100vh - 20px);
+  margin: 10px;
+}
+
+.correct h2 {
+  font-family: 'Comic Book';
+  font-size: 42px;
+}
+
+.correct p {
+  font-weight: bold;
+}
+
+.correct .correct_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  height: 100%;
 }

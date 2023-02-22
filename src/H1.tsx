@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import Player from '@vimeo/player';
 import Quiz1 from "./Quiz_1";
 import pesca from "./assets/pesca_milagrosa.jpg"
+import play_icon from "./assets/play.svg"
 import { useHistoryContext } from './HistoryProvider';
+import { motion, AnimatePresence } from "framer-motion"
 
 function H1() {
     const playerRef = useRef<HTMLDivElement>(null);
@@ -43,13 +45,33 @@ function H1() {
 
     return (
         <div className="video">
+          <AnimatePresence>
           {preview && (
-            <img className="preview" src={pesca} onClick={() => handlePreview() } width="100%" alt="" />
+            <>
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }} 
+                exit={{ opacity: 0 }}
+                transition={{ type: 'spring', stiffness: 90 }}>
+                <span className="preview_icon">
+                  <img src={play_icon} alt="" onClick={() => handlePreview()} />
+                </span>
+                <img className="preview" src={pesca} onClick={() => handlePreview()} width="100%" alt="" />
+              </motion.div>
+            </>
           )}
+          </AnimatePresence>
           
           {renderVideo()}
 
-          {quiz && ( <Quiz1 />)}
+          {quiz && ( 
+            <motion.div 
+            initial={{ opacity: 0.8, y: 200 }}
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ type: 'spring', stiffness: 90 }}>
+              <Quiz1 />
+            </motion.div>
+          )}
         </div>
     );
   }

@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import InnerHeader from "./InnerHeader";
 import { useHistoryContext } from './HistoryProvider';
 import { Link } from "react-router-dom";
+import correct from "./assets/correct.png"
+import { motion } from "framer-motion"
 
 function Correct() {
 
@@ -9,11 +11,21 @@ function Correct() {
     
 
     return (
-      <div className="correct" style={{paddingTop:'200px'}}>
+      <motion.div 
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ type: 'spring', stiffness: 90 }}
+          className="correct">
         <InnerHeader />
-        Correcto
-        <Link to={'/historia'} className="link">Siguiente</Link>
-      </div>
+        <div className="correct_wrapper">
+          <img src={correct} alt="" />
+          <div className="right">
+            <h2>¡Correcto!</h2>
+            <p>Sigue así.</p>
+            <Link to={'/historia'} className="link">Siguiente</Link>
+          </div>
+        </div>
+      </motion.div>
     );
   }
 
