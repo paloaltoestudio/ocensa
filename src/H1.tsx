@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 function H1() {
     const playerRef = useRef<HTMLDivElement>(null);
-    const [id, setId] = useState(581320126)
+    const [id, setId] = useState(796807306)
 
     const [history, setHistory, preview, setPreview, play, setPlay, quiz, setQuiz, video, setVideo] = useHistoryContext()
 
@@ -23,8 +23,6 @@ function H1() {
         let player = new Player(playerRef.current, options);
   
         player.on("ended", () => {
-          // setHistory('h2')
-          // setPreview(true)
           setQuiz('q1')
         });
       }

@@ -2,10 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import InnerHeader from "./InnerHeader";
 import { useHistoryContext } from './HistoryProvider';
 import { Link } from "react-router-dom";
-import correct from "./assets/correct.png"
+import final from "./assets/final.png"
 import { motion } from "framer-motion"
 
-function Correct() {
+
+function Final() {
 
     const [history, setHistory, preview, setPreview, play, setPlay, quiz, setQuiz] = useHistoryContext()
     
@@ -18,15 +19,14 @@ function Correct() {
           className="correct">
         <InnerHeader />
         <div className="correct_wrapper">
-          <img src={correct} alt="" />
           <div className="right">
-            <h2>¡Correcto!</h2>
-            <p>Sigue así.</p>
-            <Link to={'/final'} className="link">Siguiente</Link>
+            <h2>¡Lo lograste!</h2>
+            <p>Del área de ciberseguridad y asuntos digitales se emite un boletín con recomendaciones prácticas <strong>para evitar el ciberfraude, enfatizando la importancia de reportar a tiempo y establecer comunicación con las instancias adecuadas</strong>, y por sobre todo, entendiendo que <strong>hasta los expertos pueden ser víctimas de este tipo de ataques y debemos trabajar juntos.</strong></p>
           </div>
+          <img src={final} alt="" />
         </div>
       </motion.div>
     );
   }
 
-export default Correct
+export default Final

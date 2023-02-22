@@ -22,15 +22,17 @@ export default function Quiz1(){
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        setQuiz('')
-
+        
         if (answer == correctAnswer){
+            setQuiz('')
             setHistory('h2')
             setPreview(true)
             navigate('/correcto')
 
         } else{
+            setQuiz('q1')
             setHistory('h1')
+            setPlay(false)
             navigate('/incorrecto')
         }
     }

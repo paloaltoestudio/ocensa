@@ -15,6 +15,7 @@ import {
 } from 'react-router-dom';
 import Correct from './correct';
 import Incorrect from './incorrect';
+import Final from './final';
 
 
 
@@ -29,6 +30,7 @@ root.render(
           <Route path='/historia' element={<History />} />
           <Route path='/correcto' element={<Correct />} />
           <Route path='/incorrecto' element={<Incorrect />} />
+          <Route path='/final' element={<Final />} />
       </Routes>
     </BrowserRouter>
     </HistoryProvider>

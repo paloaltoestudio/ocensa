@@ -37,6 +37,27 @@ code {
   left: 0;
   z-index: 1;
 }
+.left_frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1;
+}
+.right_frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 1;
+}
+
+.bottom_frame {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
 
 nav {
   height: 125px;
@@ -71,6 +92,10 @@ nav {
 .carousel {
   max-width: 1200px;
   margin: auto;
+}
+
+.carousel-indicators {
+  bottom: 40px !important;
 }
 
 .carousel-item {
@@ -273,6 +298,10 @@ nav {
   border-radius: 40px;
   height: calc(100vh - 20px);
   margin: 10px;
+}
+
+.correct .right{
+  max-width: 400px;
 }
 
 .correct h2 {
