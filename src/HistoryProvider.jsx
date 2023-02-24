@@ -11,7 +11,7 @@ export function HistoryProvider({children}){
     const [history, setHistory] = useState('h1')
     const [video, setVideo] = useState('')
     const [preview, setPreview] = useState(true)
-    const [play, setPlay] = useState(false)
+    const [play, setPlay] = useState(1)
     const [quiz, setQuiz] = useState('')
 
     

@@ -1,10 +1,11 @@
-import { useEffect, useRef, useState } from "react";
-import Player from '@vimeo/player';
+import { useRef, useState } from "react";
 import Quiz1 from "./Quiz_1";
 import pesca from "./assets/pesca_milagrosa.jpg"
 import play_icon from "./assets/play.svg"
 import { useHistoryContext } from './HistoryProvider';
 import { motion, AnimatePresence } from "framer-motion"
+import YouTube, { YouTubeProps } from 'react-youtube';
+
 
 function H1() {
     const playerRef = useRef<HTMLDivElement>(null);
@@ -12,21 +13,24 @@ function H1() {
 
     const [history, setHistory, preview, setPreview, play, setPlay, quiz, setQuiz, video, setVideo] = useHistoryContext()
 
-    useEffect(() => {
-      let options = {
-        id: id,
-        loop: false,
-        autoplay: play,
-      };
-  
-      if (playerRef.current !== null) {
-        let player = new Player(playerRef.current, options);
-  
-        player.on("ended", () => {
-          setQuiz('q1')
-        });
-      }
-    }, [id, play, video]);
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+        rel:0,
+        modestbranding : 1,
+        disablekb : 1,
+        showinfo: 0,
+        fs: 0
+      },
+    };
+
+    const onPlayerReady: YouTubeProps['onEnd'] = (event) => {
+      console.log(event)
+      setQuiz('q1')
+    }
     
     const handlePreview = () => {
       setVideo('v1')
@@ -36,7 +40,7 @@ function H1() {
 
     const renderVideo = () => {
       if(video && video == 'v1'){
-        return <div ref={playerRef}></div>
+        return <YouTube videoId="mBZBPptSneM" opts={opts} onEnd={onPlayerReady} />;
       }
     }
     
