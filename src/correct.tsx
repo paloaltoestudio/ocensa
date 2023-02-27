@@ -8,8 +8,11 @@ import { motion } from "framer-motion"
 function Correct() {
 
     const [history, setHistory, preview, setPreview, play, setPlay, quiz, setQuiz] = useHistoryContext()
-    
 
+    const handleClick = () => {
+      setHistory('h1')
+    }
+    
     return (
       <motion.div 
           initial={{ opacity: 0, y: 200 }}
@@ -22,7 +25,10 @@ function Correct() {
           <div className="right">
             <h2>¡Correcto!</h2>
             <p>Sigue así.</p>
-            <Link to={'/final'} className="link">Siguiente</Link>
+            {history && history == 'final'
+              ? <Link to={'/final'} onClick={() => handleClick()} className="link">Siguiente</Link>
+              : <Link to={'/historia'} className="link">Siguiente</Link>
+            }
           </div>
         </div>
       </motion.div>

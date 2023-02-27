@@ -320,3 +320,7 @@ nav {
   column-gap: 50px;
   height: 100%;
 }
+
+.incorrect img {
+  max-width: 300px;
+}

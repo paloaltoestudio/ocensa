@@ -18,7 +18,7 @@ function H1() {
       width: '640',
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
+        autoplay: play,
         rel:0,
         modestbranding : 1,
         disablekb : 1,
@@ -29,6 +29,7 @@ function H1() {
 
     const onPlayerReady: YouTubeProps['onEnd'] = (event) => {
       console.log(event)
+      setPlay(0)
       setQuiz('q1')
     }
     
@@ -40,7 +41,7 @@ function H1() {
 
     const renderVideo = () => {
       if(video && video == 'v1'){
-        return <YouTube videoId="mBZBPptSneM" opts={opts} onEnd={onPlayerReady} />;
+        return <YouTube videoId="Qmd7OOgmtss" opts={opts} onEnd={onPlayerReady} />;
       }
     }
     
