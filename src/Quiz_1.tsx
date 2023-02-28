@@ -39,7 +39,7 @@ export default function Quiz1(){
 
     return(
         <div className="quiz">
-            <h2>¿Cuáles sonas las mjores prácticas/hábitos para evitar el fraude informático?</h2>
+            <h2>¿Cuáles sonas las mejores prácticas/hábitos para evitar el fraude informático?</h2>
 
             <form action="" onSubmit={(e) => handleSubmit(e)}>
                 <div className="field_group">
