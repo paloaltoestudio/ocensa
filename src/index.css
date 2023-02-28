@@ -341,6 +341,15 @@ nav {
     height: 50px;
   }
 
+  .video {
+    border-radius: 20px;
+  }
+
+  .preview, .video iframe {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
   .preview_icon {
     width: 60px;
     height: 60px;
@@ -407,6 +416,7 @@ nav {
   .quiz {
     padding: 10px;
     height: auto;
+    border-radius: 20px;
   }
 
   .quiz .field_group label {
@@ -415,6 +425,10 @@ nav {
 
   .quiz .field_group span {
     font-size: 14px;
+  }
+
+  .correct {
+    border-radius: 20px;
   }
 
   .correct .correct_wrapper {
