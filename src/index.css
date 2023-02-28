@@ -324,3 +324,118 @@ nav {
 .incorrect img {
   max-width: 300px;
 }
+
+@media all and (max-width: 600px){
+  .logo {
+    text-align: center;
+  }
+
+  .app {
+    position: relative;
+  }
+
+  .inner_header {
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-bottom: 0;
+    height: 50px;
+  }
+
+  .preview_icon {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  .preview_icon img {
+    cursor: pointer;
+  }
+
+  .inner_header .logo {
+    padding: 10px;
+  }
+
+  .inner_header .logo img {
+    width: 80px;
+  }
+
+  .left_frame,
+  .right_frame {
+    height: 100%;
+    max-width: 10px;
+  }
+
+  .carousel-indicators {
+    bottom: 0 !important;
+  }
+
+  .home_header img {
+    max-width: 200px;
+  }
+
+  .slider {
+    height: auto;
+  }
+
+  .carousel-item {
+    height: auto;
+  }
+
+  .carousel_wrapper {
+    flex-direction: column;
+    padding: 40px;
+    justify-content: flex-start;
+  }
+
+  .carousel_wrapper img {
+    max-width: 150px;
+  }
+
+  .carousel-caption {
+    padding: 40px;
+    margin-top: 20px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 16px;
+  }
+
+  .video {
+    overflow: visible;
+  }
+
+  .quiz {
+    padding: 10px;
+    height: auto;
+  }
+
+  .quiz .field_group label {
+    margin-bottom: 10px;
+  }
+
+  .quiz .field_group span {
+    font-size: 14px;
+  }
+
+  .correct .correct_wrapper {
+    flex-direction: column;
+  }
+
+  .correct .correct_wrapper img {
+    width: 150px;
+  }
+
+  .correct .correct_wrapper .right {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .correct .correct_wrapper .right h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .correct .correct_wrapper .right p {
+    padding: 0 20px;
+  }
+}
