@@ -21,7 +21,7 @@ function Final() {
         <div className="correct_wrapper">
           <div className="right">
             <h2>¡Lo lograste!</h2>
-            <p>Del área de ciberseguridad y asuntos digitales se emite un boletín con recomendaciones prácticas <strong>para evitar el ciberfraude, enfatizando la importancia de reportar a tiempo y establecer comunicación con las instancias adecuadas</strong>, y por sobre todo, entendiendo que <strong>hasta los expertos pueden ser víctimas de este tipo de ataques y debemos trabajar juntos.</strong></p>
+            <p>Recuerda que cuentas con el apoyo del área de ciberseguridad  y que juntos podemos enfrentar la amenaza de la ciberdelincuencia.</p>
           </div>
           <img src={final} alt="" />
         </div>

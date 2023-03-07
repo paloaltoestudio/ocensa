@@ -1,5 +1,5 @@
 import ocensa_logo from './assets/ocensa-logo.svg'
-import title from './assets/el-asedio-logo.png'
+import title from './assets/logo.png'
 import parlanchin from './assets/parlanchin.png'
 import malguerito from './assets/malguerito.png'
 import fishy from './assets/fishy.png'
@@ -24,7 +24,7 @@ function App() {
           </div>
         </nav>
         <header className="home_header">
-          <img src={title} alt="" width={300} className="title" />
+          <img src={title} alt="" className="title" />
         </header>
         
         <div className="slider">
