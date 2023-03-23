@@ -45,7 +45,9 @@ function App() {
                 <h3>Rasgos específicos:</h3>
                 <p>Su objetivo es la extorsión y para ello infiltra los dispositivos de los usuarios. Roba información para luego cobrar por ella.</p>
                 <Link to="/historia" relative="path" className="link">
-                  Empecemos
+                  ¡ATENCIÓN! <br />
+                  conoce a estos ciberdelincuentes <br />
+                  y descubre como detenerlos AQUÍ
                 </Link> 
               </Carousel.Caption>
 
@@ -67,7 +69,9 @@ function App() {
                 <h3>Rasgos específicos:</h3>
                 <p>Con su voz segura y convincente logra atraer a sus víctimas a través de llamadas telefónicas.</p>
                 <Link to="/historia" relative="path" className="link">
-                  Empecemos
+                  ¡ATENCIÓN! <br />
+                  conoce a estos ciberdelincuentes <br />
+                  y descubre como detenerlos AQUÍ
                 </Link> 
               </Carousel.Caption>
 
@@ -88,7 +92,9 @@ function App() {
                 <h3>Rasgos específicos:</h3>
                 <p>Su fuerte es la suplantación y la manipulación, hacer pensar al usuario que debe actuar rápido para resolver un impase. Por lo general utiliza un “cebo” o “carnada” vía correo electrónico para atraer a sus víctimas.</p>
                 <Link to="/historia" relative="path" className="link">
-                  Empecemos
+                  ¡ATENCIÓN! <br />
+                  conoce a estos ciberdelincuentes <br />
+                  y descubre como detenerlos AQUÍ
                 </Link> 
               </Carousel.Caption>
 
@@ -109,7 +115,9 @@ function App() {
                 <h3>Rasgos específicos:</h3>
                 <p>Sus mensajes predilectos para engañar al usuario tienen que ver con promociones, ofertas o premios. Solo basta un clic para caer en su red.</p>
                 <Link to="/historia" relative="path" className="link">
-                  Empecemos
+                  ¡ATENCIÓN! <br />
+                  conoce a estos ciberdelincuentes <br />
+                  y descubre como detenerlos AQUÍ
                 </Link> 
               </Carousel.Caption>
 
